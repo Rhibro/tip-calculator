@@ -7,13 +7,19 @@ ${tipPercent > 300 ? "15%" : "10%"} and the total amount to pay including tip is
 
 payment(265.80, 10)*/
 
-billPayment(250.85);
+/*let billPayment = 250.85;
 
 if (billPayment < 300) {
     return (10 / 100 * billPayment);
-    console.log(billPayment);
 } else (billPayment > 300); {
     return (15 / 100 * billPayment);
-    console.log(billPayment);
+}*/
 
-}
+
+let billPayment = 265;
+let percent = 10;
+
+
+calcTip: function ( {
+    return percent / 100 *billPayment
+})
