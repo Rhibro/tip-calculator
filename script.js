@@ -1,25 +1,21 @@
-/*function payment(bill, tipPercent, total){
+let billPayment = 560;
+let percentAmount;
+let percent; 
 
- total = (bill * tipPercent / 100)
-`The total amount of the bill is ${bill}. The tip % is therefore 
-${tipPercent > 300 ? "15%" : "10%"} and the total amount to pay including tip is ${total}`
+if (billPayment > 300) {
+
+    percent = 15 
+
+} else if (billPayment < 300) {
+    
+    percent = 10 
+
 }
 
-payment(265.80, 10)*/
+percentAmount = (percent / 100) * billPayment;
 
-/*let billPayment = 250.85;
+let total = percentAmount + billPayment;
 
-if (billPayment < 300) {
-    return (10 / 100 * billPayment);
-} else (billPayment > 300); {
-    return (15 / 100 * billPayment);
-}*/
+console.log(`The total amount of the bill is ${billPayment}. The tip % is therefore 
 
-
-let billPayment = 265;
-let percent = 10;
-
-
-calcTip: function ( {
-    return percent / 100 *billPayment
-})
+${percent} and the total amount to pay including tip is ${total}`)
