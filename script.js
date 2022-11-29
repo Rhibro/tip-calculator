@@ -19,3 +19,4 @@ let total = percentAmount + billPayment;
 console.log(`The total amount of the bill is ${billPayment}. The tip % is therefore 
 
 ${percent} and the total amount to pay including tip is ${total}`)
+
