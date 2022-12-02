@@ -1,4 +1,4 @@
-const billPayment = 560;
+/*const billPayment = 560;
 let percentAmount;
 let percent; 
 
@@ -18,13 +18,12 @@ const total = percentAmount + billPayment;
 
 console.log(`The total amount of the bill is ${billPayment}. The tip % is therefore 
 
-${percent} and the total amount to pay including tip is ${total}`)
+${percent} and the total amount to pay including tip is ${total}`)*/
 
-/*const billPayment = 560;
-let percentAmount;
-let percent; 
+const bill = 560;
 
-function calcTip(billPayment, percentAmount, percent){
+function calcTip() {
+    
     if (billPayment > 300) {
 
         percent = 15 
@@ -34,12 +33,16 @@ function calcTip(billPayment, percentAmount, percent){
         percent = 10 
     
     }
-    return percentAmount = ((percent / 100) * billPayment);
-    total = percentAmount + billPayment;
+
+    const total = ((percent / 100) * bill) + bill; 
 }
 
-total = percentAmount + billPayment;
 
-console.log(`The total amount of the bill is ${billPayment}. The tip % is therefore 
-${percent} and the total amount to pay including tip is ${total}`)*/
+
+console.log(`The total amount of the bill is ${bill}. The tip % is therefore 
+
+${percent} and the total amount to pay including tip is ${total}`)
+
+
+
 
