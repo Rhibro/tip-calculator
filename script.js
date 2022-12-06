@@ -24,25 +24,37 @@ const bill = 560;
 
 function calcTip() {
     
-    if (billPayment > 300) {
+    if (bill > 300) {
 
         percent = 15 
+        console.log("Tip is 15%")
     
-    } else if (billPayment < 300) {
+    } else if (bill < 300) {
         
         percent = 10 
+        console.log("Tip is 10%")
     
     }
 
-    const total = ((percent / 100) * bill) + bill; 
 }
 
+console.log(calcTip())
 
 
-console.log(`The total amount of the bill is ${bill}. The tip % is therefore 
+function totalAmount(){
 
-${percent} and the total amount to pay including tip is ${total}`)
+    let percentAmount = (parseFloat(percent / 100) * bill)
+    console.log(`${percentAmount}`)
 
+}
 
+console.log(totalAmount())
 
+function amount() {
+    let total = (parseInt(totalAmount() + bill))
+    console.log(`The total amount of the bill is ${bill}. The tip % is therefore 
 
+    ${percent} and the total amount to pay including tip is ${total}`)
+}
+
+console.log(amount())
